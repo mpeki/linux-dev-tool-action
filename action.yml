@@ -9,3 +9,5 @@ inputs:
 runs:
   using: 'docker'
   image: 'docker://macp/linux-dev-tools:snapshot'
+  args:
+    - ${{ inputs.cmd }}
