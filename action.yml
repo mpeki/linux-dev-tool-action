@@ -3,4 +3,4 @@ name: 'Hello World'
 description: 'Use dev tools image'
 runs:
   using: 'docker'
-  image: 'macp/linux-dev-tools:snapshot'
+  image: 'docker://macp/linux-dev-tools:snapshot'
