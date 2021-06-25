@@ -1,6 +1,11 @@
 # action.yml
 name: 'Hello World'
 description: 'Use dev tools image'
+inputs:
+  cmd:  # id of input
+    description: 'Command to run'
+    required: true
+    default: 'echo v1'
 runs:
   using: 'docker'
   image: 'docker://macp/linux-dev-tools:snapshot'
